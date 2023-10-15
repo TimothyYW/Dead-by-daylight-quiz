@@ -5,17 +5,29 @@ header {
     background-color: rgb(0, 0, 96);
     color: white;
     text-align: center;
+    height: 80px;
+    padding-top: 15px;
+    overflow: hidden;
 }
 
 #hero-image {
     background-image: url("../images/background.jpg");
     width: 100%;
-    height: 800px;
+    height: 600px;
+    overflow: hidden;
 }
 
 #direction-message {
     font-family: "roboto", sans-serif;
     text-align: center;
     color: azure;
-    top: 75px;
+    padding-top: 80px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px, 20px;
+    background: white;
+    cursor: pointer;
 }
