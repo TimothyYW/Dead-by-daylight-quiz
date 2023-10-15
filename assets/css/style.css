@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap");
 
 header {
     font-family: "lato", sans-serif;
@@ -17,17 +17,13 @@ header {
     overflow: hidden;
 }
 
-#direction-message {
-    font-family: "roboto", sans-serif;
+h2 {
     text-align: center;
-    color: azure;
-    padding-top: 80px;
+    font-family: "roboto", sans-serif;
 }
 
-button {
-    display: block;
-    margin: 0 auto;
-    padding: 15px, 20px;
-    background: white;
-    cursor: pointer;
+#quiz {
+    background-color: azure;
+    width: 90%;
+
 }
