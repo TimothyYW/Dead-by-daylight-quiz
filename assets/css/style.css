@@ -24,6 +24,10 @@ h2 {
 
 #quiz {
     background-color: azure;
-    width: 90%;
-
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
 }
