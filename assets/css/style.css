@@ -64,3 +64,11 @@ h3 {
     padding: 8px;
     display: none;
 }
+
+.correct {
+    background-color: whitesmoke;
+}
+
+.incorrect {
+    background-color: red;
+}
