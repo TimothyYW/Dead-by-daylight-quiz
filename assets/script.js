@@ -21,3 +21,6 @@ const questionElement = document.getElementById("question")
 const answerOption = document.getElementById("answer-option")
 const nextButton = document.getElementById("next-btn")
 
+let currentQuestionIndex = 0;
+let score = 0;
+
