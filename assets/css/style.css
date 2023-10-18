@@ -55,6 +55,12 @@ h3 {
 }
 
 #next-btn {
-    border-radius: 1px;
-    margin-left: 90%;
+    background-color: grey;
+    color: black;
+    width: 150px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-left: 80%;
+    padding: 8px;
+    display: none;
 }
