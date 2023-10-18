@@ -29,5 +29,10 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
+}
 
+function showQuestion() {
+    let currentQuestion = question[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 }
