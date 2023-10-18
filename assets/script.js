@@ -16,3 +16,8 @@ const questions = [
         correct: "d",
     }
 ];
+
+const questionElement = document.getElementById("question")
+const answerOption = document.getElementById("answer-option")
+const nextButton = document.getElementById("next-btn")
+
