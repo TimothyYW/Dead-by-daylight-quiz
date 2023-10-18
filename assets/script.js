@@ -44,3 +44,18 @@ function showQuestion() {
     });
 }
 
+function resetState() {
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild)
+}
+
+function selectAnswer() {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
+
+}
