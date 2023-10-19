@@ -51,7 +51,7 @@ function showQuestion() {
 
 function resetState() {
     nextButton.style.display = "none";
-    while (answerOptions.firstChild)
+    while (answerOptions.firstChild);
 }
 
 function selectAnswer(e) {
@@ -71,6 +71,22 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
+
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+
+    nextButton.innerHTML = "Return to the fog?";
+
+    if (score > 5) {
+        questionElement.innerHTML += " Return to the fog and join us for an adventure!";
+    } else if (score < 5) {
+        questionElement.innerHTML += " The entity will be aware of you.";
+    }
+
+    nextButton.style.display = "block";
+}
+
 
 function handleNextButton() {
     currentQuestionIndex++;
