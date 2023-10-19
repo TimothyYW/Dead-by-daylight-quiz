@@ -55,12 +55,7 @@ function showQuestion() {
     });
 }
 
-// function resetState() {
-//     nextButton.style.display = "none";
-//     while (answerOptions.firstChild) {
-//         answerOptions.removeChild(answerOptions.firstChild);
-//     }
-// }
+
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
