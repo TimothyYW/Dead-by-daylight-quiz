@@ -49,9 +49,13 @@ h3 {
     margin: 10px 0;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     color: rgb(87, 141, 188);
     background-color: black;
+}
+
+.btn:disabled {
+    cursor: no-drop;
 }
 
 #next-btn {
