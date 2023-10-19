@@ -1,24 +1,26 @@
 const questions = [
     {
         question: "Which survivor got added during chapter Curtain call?",
-        a: "Dwight Fairfield",
-        b: "Kate Denson",
-        c: "Nea Karlson",
-        d: "Felix Richter",
-        correct: "b",
+        answers: [
+            { text: "Dwight Fairfield", correct: false },
+            { text: "Kate Denson", correct: true },
+            { text: "Nea Karlson", correct: false },
+            { text: "Felix Richter", correct: false },
+        ]
     },
     {
-        question: "Who have the power called spencer's last breath?",
-        a: "The doctor",
-        b: "The oni",
-        c: "The onryo",
-        d: "The nurse",
-        correct: "d",
+        question: "Who has the power called Spencer's Last Breath?",
+        answers: [
+            { text: "The doctor", correct: false },
+            { text: "The oni", correct: false },
+            { text: "The onryo", correct: false },
+            { text: "The nurse", correct: true },
+        ]
     }
 ];
 
 const questionElement = document.getElementById("question");
-const answerOptions = document.getElementById("answer-option");
+const answerOptions = document.getElementById("answer-options");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
@@ -37,13 +39,13 @@ function showQuestion() {
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-    currentQuestion.answers.array.forEach(answer => {
+    currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerOptions.appendChild(button);
         if (answer.correct) {
-            button.dataset.correct = answer.correct;
+            button.dataset.correct = "true";
         }
         button.addEventListener("click", selectAnswer);
     });
@@ -51,7 +53,9 @@ function showQuestion() {
 
 function resetState() {
     nextButton.style.display = "none";
-    while (answerOptions.firstChild);
+    while (answerOptions.firstChild) {
+        answerOptions.removeChild(answerOptions.firstChild);
+    }
 }
 
 function selectAnswer(e) {
@@ -78,15 +82,14 @@ function showScore() {
 
     nextButton.innerHTML = "Return to the fog?";
 
-    if (score > 5) {
+    if (score > 3) {
         questionElement.innerHTML += " Return to the fog and join us for an adventure!";
-    } else if (score < 5) {
+    } else {
         questionElement.innerHTML += " The entity will be aware of you.";
     }
 
     nextButton.style.display = "block";
 }
-
 
 function handleNextButton() {
     currentQuestionIndex++;
