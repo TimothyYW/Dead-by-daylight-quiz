@@ -19,12 +19,15 @@ const questions = [
     }
 ];
 
+
 const questionElement = document.getElementById("question");
-const answerOptions = document.getElementById("answer-options");
+const answerOptions = document.getElementById("answer-option");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+startQuiz();
 
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -34,8 +37,9 @@ function startQuiz() {
 }
 
 function showQuestion() {
-    resetState();
+    // resetState();
     let currentQuestion = questions[currentQuestionIndex];
+    console.log(currentQuestion.question);
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -51,12 +55,12 @@ function showQuestion() {
     });
 }
 
-function resetState() {
-    nextButton.style.display = "none";
-    while (answerOptions.firstChild) {
-        answerOptions.removeChild(answerOptions.firstChild);
-    }
-}
+// function resetState() {
+//     nextButton.style.display = "none";
+//     while (answerOptions.firstChild) {
+//         answerOptions.removeChild(answerOptions.firstChild);
+//     }
+// }
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -77,7 +81,7 @@ function selectAnswer(e) {
 }
 
 function showScore() {
-    resetState();
+    // resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
 
     nextButton.innerHTML = "Return to the fog?";
@@ -94,6 +98,10 @@ function showScore() {
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
+        const btns = document.querySelectorAll(".btn");
+        btns.forEach(btn => {
+            btn.remove();
+        });
         showQuestion();
     } else {
         showScore();
