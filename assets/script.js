@@ -18,7 +18,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
-const answerOption = document.getElementById("answer-option");
+const answerOptions = document.getElementById("answer-option");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
@@ -32,6 +32,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -40,13 +41,17 @@ function showQuestion() {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
-        answerButton.appendChild(button);
+        answerOptions.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
     });
 }
 
 function resetState() {
     nextButton.style.display = "none";
-    while (answerButtons.firstChild)
+    while (answerOptions.firstChild)
 }
 
 function selectAnswer(e) {
@@ -57,7 +62,7 @@ function selectAnswer(e) {
     } else {
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButton.children).forEach(button => {
+    Array.from(answerOptions.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
