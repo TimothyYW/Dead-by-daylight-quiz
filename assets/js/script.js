@@ -19,7 +19,7 @@ const questions = [
     },
     {
         question: "Whose survivor portrait is this?",
-        image: "assets/images/",
+        image: "assets/images/character_portrait.jpg",
         answers: [
             { text: "Nicolas Cage", correct: true },
             { text: "Nea Karlson", correct: false },
@@ -56,7 +56,7 @@ const questions = [
     },
     {
         question: "Whose killer portrait is this?",
-        image: "assets/images/",
+        image: "assets/images/killer_portrait.jpg",
         answers: [
             { text: "The Pleague", correct: false },
             { text: "The Onryo", correct: false },
@@ -113,9 +113,13 @@ function startQuiz() {
 function showQuestion() {
     // resetState();
     let currentQuestion = questions[currentQuestionIndex];
-    console.log(currentQuestion.question);
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    if (currentQuestion.image) {
+        const questionImage = document.getElementById("question-image");
+        questionImage.src = currentQuestion.image;
+    }
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
