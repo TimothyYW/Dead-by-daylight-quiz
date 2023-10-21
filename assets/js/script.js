@@ -159,7 +159,7 @@ function showScore() {
 
     nextButton.innerHTML = "Return to the fog?";
 
-    if (score > 3) {
+    if (score < 5) {
         questionElement.innerHTML += " Return to the fog and join us for an adventure!";
     } else {
         questionElement.innerHTML += " The entity will be aware of you.";
