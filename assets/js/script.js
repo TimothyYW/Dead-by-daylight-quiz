@@ -111,7 +111,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
-    // resetState();
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -133,7 +133,12 @@ function showQuestion() {
     });
 }
 
-
+function resetState() {
+    nextButton.style.display = "none";
+    while (answerOptions.firstChild) {
+        answerOptions.removeChild(answerOptions.firstChild);
+    }
+}
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -153,8 +158,10 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
+
+
 function showScore() {
-    // resetState();
+    resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
 
     nextButton.innerHTML = "Return to the fog?";
