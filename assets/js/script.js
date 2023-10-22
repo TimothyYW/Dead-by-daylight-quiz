@@ -99,6 +99,8 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
+saveScore(score);
+
 startQuiz();
 
 function startQuiz() {
@@ -154,6 +156,15 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+}
+
+function saveScore(score) {
+    if (typeof (Storage) !== "undefined") {
+        localStorage.setItem("quizScore", score);
+        console.log("Score saved: " + score);
+    } else {
+        console.log("Sorry, the browser does not support this");
+    }
 }
 
 
