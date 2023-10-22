@@ -87,10 +87,13 @@ h3 {
     background-color: red;
 }
 
-@media and (min-width: 360px) #welcome-btn {
-    margin-left: 150px;
-}
+@media screen and (min-width: 360px) {
 
-#next-btn {
-    margin-left: 15%;
+    #welcome-btn {
+        margin-left: 150px;
+    }
+
+    #next-btn {
+        margin-left: 15%;
+    }
 }
