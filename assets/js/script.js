@@ -153,15 +153,6 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-function saveScore(score) {
-    if (typeof (Storage) !== "undefined") {
-        localStorage.setItem("quizScore", score);
-        console.log("Score saved: " + score);
-    } else {
-        console.log("Sorry, the browser does not support this");
-    }
-}
-
 
 
 function showScore() {
