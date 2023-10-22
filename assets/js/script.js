@@ -54,7 +54,7 @@ const questions = [
         ]
     },
     {
-        question: "Which killer who got history of being bullied?",
+        question: "Which killer who had history of being bullied?",
         answers: [
             { text: "The Pleague", correct: false },
             { text: "The Onryo", correct: false },
@@ -115,11 +115,6 @@ function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
-    if (currentQuestion.image) {
-        const questionImage = document.getElementById("question-image");
-        questionImage.src = currentQuestion.image;
-    }
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
