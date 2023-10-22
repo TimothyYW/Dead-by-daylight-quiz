@@ -55,9 +55,18 @@ Add question with images.
 
 Changing score system.
 
+# Testing
+
+Testing HTML through W3C Validator and CSS using Jigsaw, screenshot of proof can be seen below:
+
+Index:
+
+![Index test result] (assets/screenshots/Index-sceenshot.jpg)
+
+
 ## Credit
 
-Framework and idea from:
+Based idea:
 
 https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1004s
 
