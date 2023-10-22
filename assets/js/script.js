@@ -18,8 +18,7 @@ const questions = [
         ]
     },
     {
-        question: "Whose survivor portrait is this?",
-        image: "assets/images/character_portrait.jpg",
+        question: "Which survivor who is based on real person?",
         answers: [
             { text: "Nicolas Cage", correct: true },
             { text: "Nea Karlson", correct: false },
@@ -55,8 +54,7 @@ const questions = [
         ]
     },
     {
-        question: "Whose killer portrait is this?",
-        image: "assets/images/killer_portrait.jpg",
+        question: "Which killer who got history of being bullied?",
         answers: [
             { text: "The Pleague", correct: false },
             { text: "The Onryo", correct: false },
