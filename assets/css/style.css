@@ -86,3 +86,11 @@ h3 {
 .incorrect {
     background-color: red;
 }
+
+@media and (min-width: 360px) #welcome-btn {
+    margin-left: 150px;
+}
+
+#next-btn {
+    margin-left: 15%;
+}
