@@ -6,33 +6,33 @@ This quiz is for fun and entertainment, by asking question that is related to th
 
 [Link to deployed site]
 
-# Feature
+## Feature
 
-## Logo
+### Logo
 
 Logo of the quiyz with similar color and font from originial game.
 
 ![Logo]()
 
-## Hero image
+#### Hero image
 
 Background hero image featuring one of the iconic feature in game with dark tone and the scary atmosphere.
 
 ![Hero image]()
 
-## Index
+#### Index
 
 Aside featuring the logo of the quiz, there is the start button to start the quiz
 
 ![Start quiz button]()
 
-## Game
+#### Game
 
 The game feature ten question that depending on the number of answers will give the user with message.
 
 ![Quiz page]()
 
-# UX
+#### UX
 
 The quiz will be focusing only on the lore of dead by daylight, with many contraversial change in the gameplay mechanic, it is amusing to just diving into the lore and the fact instead of gameplay.
 
@@ -47,7 +47,7 @@ The wireframes for the index and game section as can be seen below:
 
 ![Game quiz]()
 
-# Future update and plan
+## Future update and plan
 
 Add more questions in the near future.
 
@@ -55,14 +55,23 @@ Add question with images.
 
 Changing score system.
 
-# Testing
+## Testing
 
 Testing HTML through W3C Validator and CSS using Jigsaw, screenshot of proof can be seen below:
 
 Index:
 
-![Index test result] (assets/screenshots/Index-sceenshot.jpg)
+![Index test result](assets/screenshots/Index-screenshot.JPG)
 
+Game:
+
+![Game test result](assets/screenshots/game-screenshot.JPG)
+
+CSS:
+
+![CSS test result](assets/screenshots/css-screenshot.JPG)
+
+Javascript:
 
 ## Credit
 
