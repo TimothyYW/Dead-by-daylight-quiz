@@ -10,15 +10,15 @@ This quiz is for fun and entertainment, by asking question that is related to th
 
 ### Logo
 
-Logo of the quiyz with similar color and font from originial game.
+Logo of the quiyz with similar color and font from originial game. It is also function as home page anchor.
 
-![Logo]()
+![Logo](assets/screenshots/logo-screenshot.JPG)
 
 #### Hero image
 
 Background hero image featuring one of the iconic feature in game with dark tone and the scary atmosphere.
 
-![Hero image]()
+![Hero image](assets/images/background.jpg)
 
 #### Index
 
@@ -37,7 +37,7 @@ The game feature ten question that depending on the number of answers will give 
 The quiz will be focusing only on the lore of dead by daylight, with many contraversial change in the gameplay mechanic, it is amusing to just diving into the lore and the fact instead of gameplay.
 
 The font I use for the logo is Lato, whihc is similar to the original logo as can be seen below:
-![Dead by daylight logo]()
+![Dead by daylight logo](assets/screenshots/dbd-logo.png)
 
 For the text in the quiz, I use Roboto for easy read and the simply look it has.
 
@@ -61,15 +61,15 @@ Testing HTML through W3C Validator and CSS using Jigsaw, screenshot of proof can
 
 Index:
 
-![Index test result](assets/screenshots/)
+![Index test result](assets/screenshots/index-test-result.JPG)
 
 Game:
 
-![Game test result](assets/screenshots/)
+![Game test result](assets/screenshots/game-test-result.JPG)
 
 CSS:
 
-![CSS test result](assets/screenshots/)
+![CSS test result](assets/screenshots/css-test-result.JPG)
 
 Javascript:
 
@@ -102,39 +102,3 @@ https://stackoverflow.com/questions/75571616/quiz-in-javascript
 Docstrings:
 
 https://dev.to/stephencweiss/write-your-own-javascript-contracts-and-docstrings-42ho
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some o
-f this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
