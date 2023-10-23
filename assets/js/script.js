@@ -1,3 +1,7 @@
+/**
+ * Array of questioons.
+ */
+
 const questions = [
     {
         question: "Which survivor got added during chapter Curtain call?",
@@ -99,16 +103,22 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
-saveScore(score);
-
 startQuiz();
-
+/**
+ * Intializing the quiz by resetting the current question index, score and UI.
+ */
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+/**
+ * Display the current question and its answer options.
+ * Reseting the previous question and displays the new question, 
+ * Sets up the answer options with buttons for each answer option. 
+ * Adds event listeners to the answer buttons to check if the selected answer is correct when clicked.
+ */
 
 function showQuestion() {
     resetState();
@@ -128,12 +138,23 @@ function showQuestion() {
     });
 }
 
+/**
+ * Reseting the quiz, hiding the 'nextButton' and clearing the answer options.
+ * This function is called to restart the question and removing the old 'answerOption'.
+ */
+
 function resetState() {
     nextButton.style.display = "none";
     while (answerOptions.firstChild) {
         answerOptions.removeChild(answerOptions.firstChild);
     }
 }
+
+/**
+ * Handle the user's answer selection for the current question.
+ *
+ * @param {Event} e - The click event containing information about the selected answer.
+ */
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -153,7 +174,13 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-
+/**
+ * Display the quiz score and a corresponding message to the user.
+ * This function clears the previous question and answer options, then shows the user's
+ * score and a message based on the score. If the score is less than 5, the user is
+ * encouraged to return to the fog for another attempt, while a higher score suggests
+ * success in facing the entity.
+ */
 
 function showScore() {
     resetState();
@@ -169,6 +196,12 @@ function showScore() {
 
     nextButton.style.display = "block";
 }
+
+/**
+ * Handles the "Next" button click event during the quiz.
+ * If there are more questions, it advances to the next question; 
+ * otherwise, it displays the final score.
+ */
 
 function handleNextButton() {
     currentQuestionIndex++;
