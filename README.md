@@ -61,17 +61,25 @@ Testing HTML through W3C Validator and CSS using Jigsaw, screenshot of proof can
 
 Index:
 
-![Index test result](assets/screenshots/Index-screenshot.JPG)
+![Index test result](assets/screenshots/)
 
 Game:
 
-![Game test result](assets/screenshots/game-screenshot.JPG)
+![Game test result](assets/screenshots/)
 
 CSS:
 
-![CSS test result](assets/screenshots/css-screenshot.JPG)
+![CSS test result](assets/screenshots/)
 
 Javascript:
+
+-There are 10 functions in this file.
+
+-Function with the largest signature take 1 arguments, while the median is 0.
+
+-Largest function has 8 statements in it, while the median is 5.
+
+-The most complex function has a cyclomatic complexity value of 2 while the median is 2.
 
 ## Credit
 
@@ -83,11 +91,21 @@ Loop:
 
 https://www.tutorialspoint.com/javascript/javascript_for_loop.htm
 
+Hero image:
 
+https://wallpapercave.com/dead-by-daylight-wallpapers
 
+resetState:
+
+https://stackoverflow.com/questions/75571616/quiz-in-javascript
+
+Docstrings:
+
+https://dev.to/stephencweiss/write-your-own-javascript-contracts-and-docstrings-42ho
 This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some o
+f this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
 ## Codeanywhere Reminders
 

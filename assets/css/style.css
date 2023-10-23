@@ -10,6 +10,33 @@ header {
     overflow: hidden;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 96);
+}
+
+footer {
+    color: #fff;
+    font-size: large;
+    text-align: center;
+}
+
+#instruction {
+    background-color: white;
+    width: 400px;
+    border-radius: 6px;
+    margin: auto;
+}
+
+ul{
+    text-align: left;
+}
+
 #hero-image {
     background-image: url("../images/background.jpg");
     width: 100%;

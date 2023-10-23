@@ -104,6 +104,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 startQuiz();
+
 /**
  * Intializing the quiz by resetting the current question index, score and UI.
  */
@@ -178,8 +179,8 @@ function selectAnswer(e) {
  * Display the quiz score and a corresponding message to the user.
  * This function clears the previous question and answer options, then shows the user's
  * score and a message based on the score. If the score is less than 5, the user is
- * encouraged to return to the fog for another attempt, while a higher score suggests
- * success in facing the entity.
+ * encouraged to return to the fog for another attempt, while a higher score would 
+ * give them a warning from the entity.
  */
 
 function showScore() {
@@ -196,7 +197,6 @@ function showScore() {
 
     nextButton.style.display = "block";
 }
-
 /**
  * Handles the "Next" button click event during the quiz.
  * If there are more questions, it advances to the next question; 
