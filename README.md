@@ -22,7 +22,7 @@ Background hero image featuring one of the iconic feature in game with dark tone
 
 #### Index
 
-Aside featuring the logo of the quiz, there is the start button to start the quiz
+Aside featuring the logo of the quiz, there is the start button to start the quiz.
 
 ![Start quiz button]()
 
@@ -32,6 +32,9 @@ The game feature ten question that depending on the number of answers will give 
 
 ![Quiz page]()
 
+After answering all question, depending on the amount of the answer that is correct a message will pop-up.
+
+![End quiz message]()
 #### UX
 
 The quiz will be focusing only on the lore of dead by daylight, with many contraversial change in the gameplay mechanic, it is amusing to just diving into the lore and the fact instead of gameplay.
@@ -61,11 +64,11 @@ Testing HTML through W3C Validator and CSS using Jigsaw, screenshot of proof can
 
 Index:
 
-![Index test result](assets/screenshots/index-test-result.JPG)
+![Index test result](assets/screenshots/)
 
 Game:
 
-![Game test result](assets/screenshots/game-test-result.JPG)
+![Game test result](assets/screenshots/)
 
 CSS:
 
@@ -102,3 +105,7 @@ https://stackoverflow.com/questions/75571616/quiz-in-javascript
 Docstrings:
 
 https://dev.to/stephencweiss/write-your-own-javascript-contracts-and-docstrings-42ho
+
+Favicon:
+
+https://www.cleanpng.com/free/dead-by-daylight.html
