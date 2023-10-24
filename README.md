@@ -131,7 +131,7 @@ Wave is to check if there is color contrast.
 
 ## Bugs
 
-
+There was a confusion of why is the resetState would not remove the duplicated code, but afte adjustment the code function properly.
 
 ## Deployment
 
