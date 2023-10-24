@@ -170,6 +170,8 @@ For cloning repository, can be done as followed:
 
 ## Credit
 
+Thank you to my mentor Daisy McGirr for her guidance.
+
 Based idea:
 
 https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1004s
