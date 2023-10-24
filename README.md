@@ -22,7 +22,11 @@ Background hero image featuring one of the iconic feature in game with dark tone
 
 #### Index
 
-Aside featuring the logo of the quiz, there is the start button to start the quiz.
+Aside featuring the logo of the quiz, there is an instruction on how to play the game.
+
+![Instruction](assets/screenshots/instruction-screenshot.JPG)
+
+right below the instruction, there is the start button to start the quiz.
 
 ![Start quiz button](assets/screenshots/start-button-screenshot.JPG)
 
@@ -36,6 +40,7 @@ The game feature ten question that depending on the number of answers will give 
 After answering all question, depending on the amount of the answer that is correct a message will pop-up.If too many wrong answer or below five correct answer, user will be suggested to go back and try again. While if the user answer more than five question correct, they will get notify that the entity is aware of their knowledge.
 
 ![End quiz message](assets/screenshots/game-result-screenshot.JPG)
+
 #### UX
 
 The quiz will be focusing only on the lore of dead by daylight, with many contraversial change in the gameplay mechanic, it is amusing to just diving into the lore and the fact instead of gameplay.
